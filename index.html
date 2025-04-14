@@ -12,79 +12,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      color: #4ecdc4;
-      margin-bottom: 30px;
-    }
-
-    .players-container {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      width: 100%;
-      max-width: 1200px;
+      padding: 20px;
     }
-
+    h2 {
+      margin-bottom: 10px;
+      color: #4ecdc4;
+    }
     .radio-player {
-      flex: 1 1 300px;
       max-width: 320px;
+      margin: 20px 0;
+      padding: 20px;
       background: linear-gradient(135deg, #2c2c3a, #3a3a4f);
       border-radius: 16px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .radio-player:hover {
-      transform: scale(1.03);
-    }
-
-    .radio-player h2 {
-      margin-bottom: 12px;
-      color: #4ecdc4;
-    }
-
-    audio {
-      width: 100%;
-      outline: none;
-      border-radius: 8px;
-      background: #000;
-    }
-
-    @media (max-width: 768px) {
-      .players-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1>Радио Волна FM</h1>
-  <div class="players-container">
-    <div class="radio-player">
-      <h2>Волна FM Россия</h2>
-      <audio controls preload="none">
-        <source src="https://api.codetabs.com/v1/proxy/?quest=http://radio.volnafm.ru:8000/rus" type="audio/mpeg">
-        Ваш браузер не поддерживает аудиоэлемент.
-      </audio>
-    </div>
-
-    <div class="radio-player">
-      <h2>Волна FM DEEP</h2>
-      <audio controls preload="none">
-        <source src="https://api.codetabs.com/v1/proxy/?quest=http://radio.volnafm.ru:8000/deep" type="audio/mpeg">
-        Ваш браузер не поддерживает аудиоэлемент.
-      </audio>
-    </div>
-
-    <div class="radio-player">
-      <h2>Волна FM Екатеринбург</h2>
-      <audio controls preload="none">
-        <source src="https://api.codetabs.com/v1/proxy/?quest=http://radio.volnafm.ru:8000/ekb" type="audio/mpeg">
-        Ваш браузер не поддерж
+      box-shadow: 0 10px 20px rgba(
